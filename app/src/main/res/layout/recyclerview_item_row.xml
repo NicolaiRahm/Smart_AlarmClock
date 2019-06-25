@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/view_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/delete_icon"
+                android:contentDescription="@string/trashcanImg"
+                android:layout_width="@dimen/ic_delete"
+                android:layout_height="@dimen/ic_delete"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/padd_10"
+                app:srcCompat="@drawable/ic_delete_white_24dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="53dp"
+                android:text="@string/delete"
+                android:textColor="#fff"
+                android:textSize="13sp" />
+
+        </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/view_foreground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="80dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mockImage"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/vonXY2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nameWecker" />
+
+        <ImageView
+            android:id="@+id/imageViewShared"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:visibility="invisible"
+            android:contentDescription="@string/shareSym"
+            app:layout_constraintBottom_toTopOf="@+id/itemRowMessage"
+            app:layout_constraintEnd_toEndOf="@+id/mockImage"
+            app:layout_constraintStart_toStartOf="@+id/mockImage"
+            app:layout_constraintTop_toTopOf="@+id/nameWecker"
+            app:layout_constraintVertical_chainStyle="spread_inside"
+            app:srcCompat="@drawable/ic_share_black_24dp" />
+
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="4dp"
+            android:textSize="@dimen/normal_text_size"
+            android:layout_toEndOf="@+id/nameWecker"
+            app:layout_constraintBottom_toBottomOf="@+id/vonXY2"
+            app:layout_constraintEnd_toStartOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="@+id/nameWecker" />
+
+        <TextView
+            android:id="@+id/nameWecker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="@dimen/next_alarm_name"
+            app:layout_constraintEnd_toStartOf="@+id/time"
+            app:layout_constraintStart_toEndOf="@+id/mockImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/onOff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/vonXY2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/nameWecker" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:visibility="invisible"
+            android:contentDescription="@string/repeatImg"
+            app:layout_constraintBottom_toBottomOf="@+id/vonXY2"
+            app:layout_constraintEnd_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toTopOf="@+id/nameWecker"
+            app:srcCompat="@drawable/ic_repeat_black_24dp" />
+
+        <TextView
+            android:id="@+id/vonXY2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintStart_toStartOf="@+id/nameWecker"
+            app:layout_constraintTop_toBottomOf="@+id/nameWecker" />
+
+        <FrameLayout
+            android:id="@+id/approveCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:background="@drawable/border_left_approve"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/infoApproveCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginEnd="12dp"
+                android:layout_marginStart="12dp"
+                android:contentDescription="@string/newSharedInfoImg"
+                app:srcCompat="@drawable/ic_arrow_drop_down_accent_24dp" />
+
+            <TextView
+                android:id="@+id/sharedAlarmStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginEnd="3dp"
+                android:layout_marginStart="3dp"
+                android:textAlignment="center"
+                android:textColor="#ffffff"
+                android:textSize="@dimen/normal_text_size"
+                android:textStyle="bold" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/messageAlarm_deleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:textSize="@dimen/normal_text_size"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/message_buttonBuddyDeleted"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/message_buttonBuddyDeleted" />
+
+        <ImageButton
+            android:id="@+id/message_buttonBuddyDeleted"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:visibility="gone"
+            android:contentDescription="@string/byBuddyDeletedImg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vonXY2"
+            app:srcCompat="@drawable/ic_check_circle_black_24dp" />
+
+        <ImageView
+            android:id="@+id/itemRowMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:visibility="invisible"
+            android:contentDescription="@string/msgImg"
+            app:srcCompat="@drawable/ic_message_black_24dp"
+            app:layout_constraintBottom_toBottomOf="@+id/vonXY2"
+            app:layout_constraintEnd_toEndOf="@+id/mockImage"
+            app:layout_constraintStart_toStartOf="@+id/mockImage"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewShared" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_end="48dp" />
+
+
+        <TextView
+            android:id="@+id/sharedAlarm_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/message_alarmDetails"
+            android:textSize="@dimen/normal_text_size"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/whiteBorder" />
+
+        <Button
+            android:id="@+id/sharedAlarm_notAccept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/round_search_button"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:text="@string/alarmUpdatesButton"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sharedAlarm_accept" />
+
+        <ImageButton
+            android:id="@+id/sharedAlarm_accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/round_search_button"
+            android:paddingBottom="10dp"
+            android:paddingEnd="10dp"
+            android:paddingStart="10dp"
+            android:paddingTop="10dp"
+            android:contentDescription="@string/clickToAccept"
+            app:layout_constraintBottom_toBottomOf="@+id/sharedAlarm_alarm"
+            app:layout_constraintEnd_toEndOf="@+id/message_buttonBuddyDeleted"
+            app:layout_constraintTop_toTopOf="@+id/sharedAlarm_details"
+            app:srcCompat="@drawable/ic_check_white_24dp" />
+
+        <TextView
+            android:id="@+id/sharedAlarm_repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/message_alarmRepeatNo"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sharedAlarm_details" />
+
+        <TextView
+            android:id="@+id/sharedAlarm_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/message_alarmDays"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sharedAlarm_repeat" />
+
+        <TextView
+            android:id="@+id/sharedAlarm_alarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/message_alarmAlarm"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/sharedAlarm_days" />
+
+        <TextView
+            android:id="@+id/detailsMo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/search_layout"
+            android:textAlignment="center"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/sharedAlarm_days"
+            app:layout_constraintStart_toEndOf="@+id/sharedAlarm_days"
+            app:layout_constraintTop_toTopOf="@+id/sharedAlarm_days" />
+
+        <TextView
+            android:id="@+id/detailsDi"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/search_layout"
+            android:textAlignment="center"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/detailsMo"
+            app:layout_constraintStart_toEndOf="@+id/detailsMo"
+            app:layout_constraintTop_toTopOf="@+id/detailsMo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/detailsMi"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/search_layout"
+            android:textAlignment="center"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/detailsDi"
+            app:layout_constraintStart_toEndOf="@+id/detailsDi"
+            app:layout_constraintTop_toTopOf="@+id/detailsDi"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/detailsDo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/search_layout"
+            android:textAlignment="center"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/detailsMi"
+            app:layout_constraintStart_toEndOf="@+id/detailsMi"
+            app:layout_constraintTop_toTopOf="@+id/detailsMi"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/detailsFr"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/search_layout"
+            android:textAlignment="center"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/detailsDo"
+            app:layout_constraintStart_toEndOf="@+id/detailsDo"
+            app:layout_constraintTop_toTopOf="@+id/detailsDo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/detailsSa"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/search_layout"
+            android:textAlignment="center"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintBottom_toBottomOf="@+id/detailsFr"
+            app:layout_constraintStart_toEndOf="@+id/detailsFr"
+            app:layout_constraintTop_toTopOf="@+id/detailsFr"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/detailsSo"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="8dp"
+            android:textSize="@dimen/normal_text_size"
+            android:background="@drawable/search_layout"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@+id/detailsSa"
+            app:layout_constraintStart_toEndOf="@+id/detailsSa"
+            app:layout_constraintTop_toTopOf="@+id/detailsSa"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <View
+            android:id="@+id/whiteBorder"
+            android:background="#ffffff"
+            android:layout_width="0dp"
+            android:layout_height="3dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/approveCheck"/>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/groupSharedAlarm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="sharedAlarm_details,sharedAlarm_accept,sharedAlarm_repeat,sharedAlarm_days,sharedAlarm_alarm,detailsMo,detailsDi,detailsMi,detailsDo,detailsFr,detailsSa,detailsSo,whiteBorder" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

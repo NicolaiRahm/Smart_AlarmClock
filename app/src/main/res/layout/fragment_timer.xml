@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <import type="android.view.View"/>
+        <import type="com.nicolai.alarm_clock.util.TimeUtil"/>
+        <variable name="viewModel" type="com.nicolai.alarm_clock.viewmodels.ViewModel_MainTimer"/>
+    </data>
+    <androidx.constraintlayout.motion.widget.MotionLayout
+            android:id="@+id/motionLayout_timer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutDescription="@xml/scene_timer">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:id="@+id/constraint_timer">
+
+            <TextView
+                    android:id="@+id/counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="30sp"
+                    android:visibility="@{viewModel.currentTimer == null ? View.GONE : View.VISIBLE}"
+                    app:timerTimeView="@{viewModel.currentTimer.getMillisLeft}"
+                    app:layout_constraintBottom_toBottomOf="@+id/progress_countdown"
+                    app:layout_constraintEnd_toEndOf="@+id/progress_countdown"
+                    app:layout_constraintStart_toStartOf="@+id/progress_countdown"
+                    app:layout_constraintTop_toTopOf="@+id/progress_countdown" android:textColor="@color/colorText"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="@{viewModel.currentTimer == null ? View.GONE : viewModel.currentTimer.getState.isIdle ? View.GONE : View.VISIBLE}"
+                    app:backgroundTint="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toStartOf="@+id/fab_start_pause"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_countdown"
+                    app:layout_constraintVertical_bias="0.3"
+                    app:srcCompat="@drawable/ic_stop_white_24dp"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_start_pause"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:visibility="@{viewModel.currentTimer == null ? View.GONE : View.VISIBLE}"
+                    android:src="@{viewModel.currentTimer.getState.isRunning ? @drawable/ic_pause_white_24dp : viewModel.currentTimer.getState.isFinished ? @drawable/ic_replay_white_24dp : @drawable/ic_play_arrow_white_24dp}"
+                    app:backgroundTint="@color/colorPrimary"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toEndOf="@+id/fab_stop"
+                    app:layout_constraintTop_toBottomOf="@+id/progress_countdown"
+                    app:layout_constraintVertical_bias="0.3" android:layout_marginStart="16dp"/>
+
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                    android:id="@+id/progress_countdown"
+                    style="@style/Widget.MaterialProgressBar.ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="8dp"
+                    android:max="@{(int) viewModel.currentTimer.getDuration / 1000}"
+                    android:progress="@{TimeUtil.timerProgress(viewModel.currentTimer.getDuration, viewModel.currentTimer.getMillisLeft)}"
+                    android:minHeight="222dp"
+                    android:minWidth="222dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.35000002"/>
+
+            <TextView
+                android:id="@+id/endetUm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="4dp"
+                android:textColor="@color/tab_text_color"
+                android:textSize="@dimen/normal_text_size"
+                android:visibility="@{viewModel.currentTimer.getEnds == 0L ? View.GONE : View.VISIBLE}"
+                app:ends="@{viewModel.currentTimer.getEnds}"
+                app:layout_constraintEnd_toEndOf="@+id/counter"
+                app:layout_constraintStart_toStartOf="@+id/counter"
+                app:layout_constraintTop_toBottomOf="@+id/counter" />
+
+            <TextView
+                android:id="@+id/timer_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/room_object_background"
+                android:padding="5dp"
+                android:text="@{viewModel.currentTimer.getName}"
+                android:textColor="@color/tab_text_color"
+                android:textSize="@dimen/text_18sp"
+                android:visibility="@{viewModel.currentTimer == null ? View.GONE : viewModel.currentTimer.getName.isEmpty() ? View.GONE : View.VISIBLE}"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toTopOf="@+id/progress_countdown"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/timer_list"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/timer_list_background"/>
+
+
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+</layout>

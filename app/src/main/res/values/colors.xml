@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0194c5</color><!-- #1381b3 -->
+    <color name="colorPrimaryDark">#1174A1</color>
+    <color name="colorAccent">#fddb46</color>
+
+    <color name="forMe">#f7fcfd</color>
+    <color name="cardViewMain">#55ffffff</color>
+    <color name="colorPrimaryBuddies">#226b84</color>
+    <color name="colorPrimaryBuddiesDark">#1e6076</color>
+    <color name="flat_landscape">#33B5E5</color>
+    <color name="olde_flat_landscape">#1ba6e0</color>
+    <color name="next_alarm_shadow">#116a8f</color>
+    <color name="next_alarm_shadow_light">#179bd4</color>
+    <color name="next_alarm_white">#ffffff</color>
+    <color name="next_alarm_black">#3d3d3d</color>
+    <color name="over_view">#b3e5fc</color>
+    <color name="tab_text_color">#A4D1E6</color>
+    <color name="bg_row_background">#e91e63</color>
+    <color name="item_name">#455a64</color>
+    <color name="closedDays">#9c455a64</color>
+    <color name="profile_background1">#c6414141</color>
+
+    <color name="bluredOverlayer">#88000000</color>
+
+    <!-- Onboarding -->
+    <color name="OnbordingPD">#181A24</color>
+    <color name="colorTransparentWhite">#cccccc</color>
+
+    <color name="account_button_white">#ebf3f9</color>
+    <color name="account_button_text_color">#1b355b</color>
+
+
+    <!-- RoomUp Timer -->
+    <color name="colorDam">#e4e6e7</color>
+    <color name="colorText">#fcfdfd</color>
+    <color name="colorPrimary50">#80263238</color>
+    <color name="colorAccentRoom">#1e88e5</color>
+
+
+
+
+
+
+
+
+
+
+
+    <!-- DARK THEME -->
+    <color name="DarkColorPrimary">#263238</color><!-- #1381b3 -->
+    <color name="DarkColorPrimaryDark">#000000</color>
+    <color name="DarkColorAccent">#1e88e5</color>
+
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="song_array">
+        <item>@string/ringtoneC</item>
+        <item>@string/musicC</item>
+        <item>@string/spotifyC</item>
+    </string-array>
+
+</resources>

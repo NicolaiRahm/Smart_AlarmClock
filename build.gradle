@@ -1,0 +1,32 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+
+    repositories {
+        jcenter()
+        google()
+    }
+
+    /*configurations.all {
+        resolutionStrategy {
+            // We want version 5.3.2 instead of 5.2.1.
+            force 'net.sf.proguard:proguard-gradle:5.3.2'
+        }
+    }*/
+
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.4.1'//3.3.2    //Gradel version 4.10.1
+        classpath 'com.google.gms:google-services:4.2.0'//4.0.1
+    }
+}
+
+allprojects {
+    repositories {
+        jcenter()
+        google()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

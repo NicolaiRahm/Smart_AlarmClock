@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Transition
+        motion:constraintSetStart="@+id/start"
+        motion:constraintSetEnd="@+id/end"
+        motion:duration="170">
+        <OnSwipe
+            motion:touchAnchorId="@+id/handle"
+            motion:touchAnchorSide="top"
+            motion:dragDirection="dragUp"
+            motion:moveWhenScrollAtTop="true"/>
+        <OnClick
+            motion:target="@+id/handle"
+            motion:clickAction="transitionToEnd"
+            />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start">
+        <Constraint
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintBottom_toBottomOf="parent">
+
+            <!--CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="@color/over_view"/-->
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/nextTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:scaleX="1.0"
+            android:scaleY="1.0"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/nextShared">
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/imageView8"
+            android:layout_width="@dimen/alarmanimation1"
+            android:layout_height="0dp"
+            android:alpha="1.0"
+            android:layout_marginEnd="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/nextTime"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/nextTime">
+        </Constraint>
+
+
+        <Constraint
+            android:id="@+id/nextIntervall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:alpha="1.0"
+            motion:layout_constraintEnd_toEndOf="@+id/imageView8"
+            motion:layout_constraintStart_toStartOf="@+id/imageView8"
+            motion:layout_constraintTop_toBottomOf="@+id/nextTime">
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:alpha="1.0"
+            motion:layout_constraintBottom_toTopOf="@+id/newSharedAlarm"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent">
+        </Constraint>
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end">
+
+        <Constraint
+            android:id="@+id/recyclerView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginBottom="0dp"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintTop_toBottomOf="@+id/nextTimeLeft"
+            motion:layout_constraintBottom_toBottomOf="parent">
+
+            <!--CustomAttribute
+                motion:attributeName="backgroundColor"
+                motion:customColorValue="@color/over_view"/-->
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/nextTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="2dp"
+            android:scaleX="0.90"
+            android:scaleY="0.90"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="parent">
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/imageView8"
+            android:alpha="0.0"
+            android:layout_width="@dimen/alarmanimation2"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp"
+            motion:layout_constraintBottom_toBottomOf="@+id/nextTime"
+            motion:layout_constraintStart_toEndOf="@+id/nextTime"
+            motion:layout_constraintTop_toTopOf="@+id/nextTime">
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/nextIntervall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:alpha="0.0"
+            motion:layout_constraintEnd_toEndOf="@+id/imageView8"
+            motion:layout_constraintStart_toStartOf="@+id/imageView8"
+            motion:layout_constraintTop_toBottomOf="@+id/nextTime">
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:alpha="0.0"
+            motion:layout_constraintBottom_toTopOf="@+id/newSharedAlarm"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent">
+
+            <!--CustomAttribute
+                motion:attributeName="alpha"
+                motion:customFloatValue="0.0"/-->
+        </Constraint>
+    </ConstraintSet>
+
+</MotionScene>

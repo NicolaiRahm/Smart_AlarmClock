@@ -1,0 +1,528 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">TuckTack</string>
+    <string name="locale">default</string>
+    <string name="abstandIntervall">distance in min.</string>
+    <string name="geteilt">shared</string>
+    <string name="speichern">save</string>
+    <string name="cancel">Cancel</string>
+    <string name="finish">done</string>
+    <string name="delete">delete</string>
+    <string name="Alarmintervall_Auswählen">select an alarm interval</string>
+    <string name="Minuten">minutes</string>
+    <string name="Anzahl">number</string>
+    <string name="ok">OK</string>
+    <string name="alarmIntervallManuel">%1$d times every %2$d min.</string>
+    <string name="choose_alarmtone">select an alarm tone</string>
+    <string name="Name_Wecker">Has the alarm clock a name\?</string>
+    <string name="AlarmTon">select a ringtone or song</string>
+    <string name="Musik">music</string>
+    <string name="choosenTime" translatable="false">%1$d:%2$s</string>
+    <string name="malAlle" translatable="false">*</string>
+    <string name="Mo">Monday</string>
+    <string name="Di">Tuesday</string>
+    <string name="Mi">Wednesday</string>
+    <string name="Do">Thursday</string>
+    <string name="Fr">Friday</string>
+    <string name="Sa">Saturday</string>
+    <string name="So">Sunday</string>
+    <string name="realy">Should the alarm clock really be discarded?</string>
+    <string name="realy2">Should the changes really be discarded?</string>
+    <string name="noMore">The alarm clock is no longer used! Should it be deleted?</string>
+    <string name="noMoreV">The alarm clock is no longer used! Should it be deleted?\nBecause it is shared the overview in the Control-Center would also be gone!</string>
+    <string name="Alarme">Alarms</string>
+    <string name="Hinzufügen">Add</string>
+    <string name="ForMe">For me too</string>
+    <string name="SMS">With SMS</string>
+    <string name="APP">With APP</string>
+    <string name="verschlafen">OVERSLEPT</string>
+    <string name="auslogen">log out</string>
+    <string name="emailAendern">New mobile number</string>
+    <string name="EmailVar" translatable="false">%1$s</string>
+    <string name="Email">Mobile number:</string>
+    <string name="Account">Account:</string>
+    <string name="deleteAccount">Delete account</string>
+    <string name="Benutzername">User name:</string>
+    <string name="Google2">Your user name is provided by Google. You would have to change it in your Google account.</string>
+    <string name="usernameAendern">New user name</string>
+    <string name="Profilbild">Change profile picture</string>
+    <string name="ProfilbildUpdate">Profile picture successfully uploaded!</string>
+    <string name="AllUsers">All users</string>
+    <string name="Profil">Profile</string>
+    <string name="sRequest">Alarmbuddy?</string>
+    <string name="sRequestCancel">abort request</string>
+    <string name="sRequestAccept">accept</string>
+    <string name="dRequest">reject</string>
+    <string name="AnfrageVersendet">Request sent!</string>
+    <string name="AnfrageCanceld">Request canceled</string>
+    <string name="AnfrageAbgelehnt">reject request</string>
+    <string name="Friends">You are buddies now</string>
+    <string name="Unfriend">delete\n%1s</string>
+    <string name="Unfriended">removed %1s</string>
+    <string name="FriendsFragment">Buddies</string>
+    <string name="ChooseFriendAlarm">Send alarm to…</string>
+    <string name="ChooseFriendMessage">Choose an Alarm Buddy...</string>
+    <string name="SearchFriend">Search for buddies</string>
+    <string name="message_details">minder info:</string>
+    <string name="message_lastSend">last active: %1s</string>
+    <string name="message_turnedOff">status: %1s</string>
+    <string name="message_alarmDetails">alarm details:</string>
+    <string name="message_alarmRepeatYes">repeat: yes</string>
+    <string name="message_alarmRepeatNo">repeat: no</string>
+    <string name="message_alarmDays">days:</string>
+    <string name="message_alarmAlarm">alarm interval: %1s</string>
+    <string name="alarmOnce">once</string>
+    <string name="alarmUpdatesButton">do not use</string>
+    <string name="sAlarmNeu">new</string>
+    <string name="sAlarmUpdated">updated</string>
+    <string name="sAlarmDeleted">deleted</string>
+    <string name="user_deleted">User deleted</string>
+    <string name="message_deletedByBuddy">Is no longer a minder: %1s</string>
+    <string name="Alarmname">alarm name</string>
+    <string name="AlarmnameNo">no name yet</string>
+    <string name="AlarmTage">Days</string>
+    <string name="AlarmIntervall">Interval</string>
+    <string name="AlarmIntervallNo">once</string>
+    <string name="AlarmTone">Alarm tone</string>
+    <string name="AlarmVolume">Volume</string>
+    <string name="SpeechControl">Voice control</string>
+    <string name="On">on</string>
+    <string name="Off">off</string>
+    <string name="alarmDuration">Alarm duration (in seconds)</string>
+
+    <!-- Notifications -->
+    <string name="Freundschaftsanfrage">Friend request</string>
+    <string name="FreundschaftsanfrageBody" formatted="false">%1$s has sent you a friend request.</string>
+    <string name="Wecker">Alarm clock</string>
+    <string name="WeckerBody" formatted="false">%1$s has sent you an alarm clock.</string>
+    <string name="Weckerupdate">Alarm clock update</string>
+    <string name="WeckerupdateBody" formatted="false">%1$s has updated the alarm clock.</string>
+    <string name="WeckerDeleted">Alarm clock deleted</string>
+    <string name="WeckerDeletedBody" formatted="false">%1$s has deleted the alarm clock.</string>
+    <string name="FromWeckerDeletedBody" formatted="false">%1$s has removed you from the alarm clock.</string>
+    <string name="Weckernachricht">Look after</string>
+    <string name="WeckernachrichtBody" formatted="false">%1$s wants you to be a minder.</string>
+    <string name="Weckernachrichtupdate">minder update</string>
+    <string name="WeckernachrichtupdateBody" formatted="false">"%1$s has updated the alarm"</string>
+    <string name="WeckernachrichtDeleted">Alarm deleted</string>
+    <string name="WeckernachrichtDeletedBody" formatted="false">"%1$s has deleted the alarm to look after</string>
+    <string name="NachrichtDeleted">You have been removed</string>
+    <string name="FromNachrichtDeletedBody" formatted="false">You do not have to look after %1$s anymore.</string>
+    <string name="MyMessageDeleted">Doesn\'t look after anymore</string>
+    <string name="MyMessageDeletedBody" formatted="false">%1$s doesn\'t look after your alarm anymore.</string>
+
+
+    <string name="KeineMusik">No music found!</string>
+    <string name="SharedWeckerDeleted">The alarm clock is shown as deleted to all Buddies!</string>
+    <string name="SharedWeckerANDDeleted">The alarm clock is shown as deleted to all Buddies and deleted for minders.!</string>
+    <string name="SharedMessagesDeleted">The alarm clock will be deleted for all minders!</string>
+    <string name="Ja">Yes</string>
+    <string name="Nein">No</string>
+    <string name="einstellung">default settings</string>
+    <string name="wifi">Wifi when ringing</string>
+    <string name="wifiAutoNo">Wifi is NOT automatically turned on if the alarm clock has shared a message and / or notifies an alarm owner.</string>
+    <string name="wifiAutoYes">Wifi is automatically turned on if the alarm clock has shared a message and / or notifies an alarm owner.</string>
+    <string name="standardAlarmSound">Alarm tone</string>
+    <string name="standardVolume">Volume</string>
+    <string name="standardDuration">Alarm duration</string>
+    <string name="standardIntervall">Interval</string>
+    <string name="standardVoicecontrole">Voice control</string>
+    <string name="autoDownload">Automatic alarm clock download!</string>
+    <string name="autoDownloadExplanation">The alarm clocks of trusted Buddies are automatically downloaded and turned on!</string>
+    <string name="Timer">TIMER</string>
+    <string name="timer_expired">Timer has finished</string>
+    <string name="timer_again">restart?</string>
+    <string name="timer_start_in_Notification">start</string>
+    <string name="timer_running">Timer is running</string>
+    <string name="timer_end">ends: %1$s</string>
+    <string name="timer_ended">ended: %1$s</string>
+    <string name="timer_pause_in_Notification">pause</string>
+    <string name="timer_stop_in_Notification">reset</string>
+    <string name="timer_resume">continue timer</string>
+    <string name="timer_resume_in_Notification">continue</string>
+    <string name="negativ_timer" translatable="false">- %s</string>
+    <string name="timer_already">There is already a timer running</string>
+    <string name="houre">hours</string>
+    <string name="minutes">minutes</string>
+    <string name="seconds">seconds</string>
+    <string name="control_center">Control-Center</string>
+    <string name="onlyMe">Only for me</string>
+    <string name="weckerVon">Alarm clock by:\u0020</string>
+    <string name="vonMir">Shared by me</string>
+    <string name="vonMirUnd">shared + minder</string>
+    <string name="mitNachricht">With minder</string>
+    <string name="klingeltIn">Goes off in: %1$d h and %2$d min.</string>
+    <string name="klingeltInShort">%1$d h and %2$d min.</string>
+    <string name="klingeltInToast">Goes off in: %1$s</string>
+    <string name="nextAlarm">Next alarm: %s</string>
+    <string name="nextTime" translatable="false">%1$s:%2$s</string>
+    <string name="nextIntervall">%1$d every %2$d min.</string>
+    <string name="sharedFeed">New : %1$d , Updated: %2$d</string>
+    <string name="keineSharedMessage">No alarm to look after</string>
+    <string name="noSharedMessageConnection">No connection to the database!</string>
+    <string name="deleteAll">delete all (%d)</string>
+    <string name="NoWecker">delete all(0)</string>
+
+    <!-- SharedPref keys -->
+    <string name="sharedIntervall" translatable="false">interval</string>
+    <string name="sharedAnzahl" translatable="false">anzahl</string>
+    <string name="sharedVolume" translatable="false">volume</string>
+    <string name="sharedAlarmsound" translatable="false">sound</string>
+    <string name="sharedVoicecontrol" translatable="false">voiceControl</string>
+    <string name="sharedDuration" translatable="false">duration</string>
+    <string name="sharedWifi" translatable="false">wifi</string>
+    <string name="sharedTimeBisVerschlafen" translatable="false">timeBisVerschlafen</string>
+
+    <string name="sharedTokenSend" translatable="false">tokenSend</string>
+    <string name="sharedInviteLink" translatable="false">inviteLink</string>
+    <string name="sharedFullVersion" translatable="false">fullVersion</string>
+    <string name="sharedFullProfileImage" translatable="false">profile_image</string>
+
+
+    <string name="timeBisVerschlafenNach">%1$s minutes after the last ringing</string>
+    <string name="timeBisVerschlafen">Is considered overslept</string>
+    <string name="no_day_choosen">No day selected anymore</string>
+    <string name="editSharedAlarm">alarm details / edit</string>
+    <string name="noAufpassen">No alarm clock to watch</string>
+    <string name="title_activity_control_center">Control-Center</string>
+    <string name="tag_time" translatable="false">%1$s / %2$s</string>
+    <string name="shared_in">In %1$dh and %2$d min.</string>
+    <string name="shared_am">at the %1$s / %2$s</string>
+    <string name="message_von_um">By %1$s on %2$s / %3$s</string>
+    <string name="next_message_name">Next alarm to look after: %1$s</string>
+    <string name="technischPossible">Technically possible! Legally difficult.</string>
+    <string name="speechDisclaimer">If a song with text is played or the alarm is turned to full volume your instructions cannot always be understood reliably.\n\nThat will be improved significantly in the upcoming updates.</string>
+    <string name="speechSnooze2">pause</string>
+    <string name="speechSnooze1">snooze</string>
+    <string name="speechSnooze3">right away</string>
+    <string name="toSnooze">To snooze call:</string>
+    <string name="toTurnOff">To turn off call:</string>
+    <string name="speechOff1">off</string>
+    <string name="speechOff2">turn off</string>
+    <string name="speechOff3">get lost</string>
+    <string name="countCCFeed" formatted="false" translatable="false">\n%1$d</string>
+    <string name="messageForYou" formatted="false">Alarms to look after</string>
+    <string name="weckerVonDir" formatted="false">Sent\nAlarms</string>
+    <string name="nextMessageFeed1" formatted="false">Next look after</string>
+    <string name="nextMessageFeed" formatted="false" translatable="false">%1$s / %2$s\n\n%3$s</string>
+    <string name="keinKontakt">No contact selected yet</string>
+    <string name="sms_aufgestanden">I\'ve turned off the alarm for %1$d:%2$s o\'clock!</string>
+    <string name="sms_verschlafen" formatted="false">I\'ve overslept the alarm for %1$d:%2$s o\'clock!\Please wake me up!! :)</string>
+    <string name="status_schlummert">snoozing</string>
+    <string name="status_aufgestanden">got up</string>
+    <string name="status_verschlafen">overslept</string>
+    <string name="status_online">ringing</string>
+    <string name="statusA_bestaetigt">approved</string>
+    <string name="statusA_deleted">deleted</string>
+    <string name="statusA_update_downloaded">downloaded the update</string>
+    <string name="statusA_not_updated_yet">not yet updated</string>
+    <string name="statusA_downloaded">downloaded</string>
+    <string name="statusA_not_downloaded_yet">not yet downloaded</string>
+    <string name="statusM_not_used_yet">not used yet</string>
+    <string name="tryAgain" formatted="false">%1$s\n\nTry again?</string>
+    <string name="loginFailed">Log in failed</string>
+    <string name="greating" formatted="false">Hello %1$s</string>
+    <string name="Integer" translatable="false">%1$d</string>
+    <string name="dasBistDu">no no</string>
+    <string name="fertig">done</string>
+    <string name="deletedAfterWakeUp">(deleted)</string>
+    <string name="speech_not_available">Speech recognition is not yet supported. Download in the Google Play Store?</string>
+    <string name="dialogDeleteAll">If you have shared alarms, they will  be stoped and displayed as deleted to the recipient. The same happens when an alarm has shared a message.</string>
+    <string name="ue30">at most 30</string>
+    <string name="nichtVonDir">You doesn\'t own the alarm!</string>
+    <string name="wirklichLoeschen">Do you really want to delete the account? All shared alarms and messages will be deleted and nobody can send you / you can send nobody  alarms or messages!</string>
+    <string name="enable_google_voice_typing">You can only turn off the alarm with voice control if Google voice typing is allowed!</string>
+    <string name="invite">share</string>
+    <string name="inviteMessage" formatted="false">Never fear again to oversleep the alarm clock without any body noticing &#8212;> \n%1$s</string>
+    <string name="inviteExplanation" formatted="false">Share TuckTack with at least %1$d friends to get the full version FOR FREE!!</string>
+    <string name="inviteChooser">How do you want to send the link?</string>
+    <string name="lockedUser" formatted="false">%1$s can not look after any messages or alarms yet!</string>
+    <string name="fullVersion">Full version</string>
+    <string name="fullVersionText">&#8226; Minders can get live information about your alarm clock and your status<b>in their Control-Center</b>.
+        \n\n&#8226; You can <b>send alarm clocks</b> and get the current status of all receivers in your Control-Center.
+        \n\n&#8226; You can <b>receive alarm clocks</b> and look after buddies via TuckTack in your CC.
+        \n\n&#8226; <b>Your Control-Center</b> gets unlocked. There you can get <b>live information</b> about receivers of alarms by you
+                    and buddies you have to look after.</string>
+    <string name="spokenAlarmName">Say the new alarm name&#8230;</string>
+
+    <string name="updated">updated</string>
+    <string name="failed">failed</string>
+
+    <string name="verification_code">Verification code</string>
+    <string name="number_title">Provide a mobile number</string>
+    <string name="name_title">Choose a user name</string>
+    <string name="provide_number">Your mobile number: +XY&#8230;</string>
+    <string name="provide_name">Your user name</string>
+    <string name="provide_number_disclaimer">To let your friends find you easily by their contacts please provide your mobile number.
+        \n\nIt will only be used for that and not be shared with third party!!\nIf you don\'t want to do this just click cancel.</string>
+    <string name="provide_name_disclaimer">In case a friend has not associated your number with a name this user name will be shown.
+        \nThe user name can also be used for search if someone can\'t find you by contacts.</string>
+
+    <string name="start_with_country_code">Please start with your country code: +XY&#8230;</string>
+    <string name="relogin_number">For security reasons you need to login to your account again befor you can change your mobile number!</string>
+    <string name="relogin_delete_account">For security reasons you need to login to your account again befor you can delete it!</string>
+    <string name="weiter">continue</string>
+
+    <string name="message_cost_disclaimer">By tapping done on the keyboard, an SMS may be sent. Messages and data rates may apply.</string>
+    <string name="byContacts">by contacts</string>
+    <string name="search_explanation">Search for friends by your contacts / mobile number or click the search icon in the toolbar to search by TuckTack
+            user name.</string>
+    <string name="donotpushit">Don\'t push it :)</string>
+
+    <string name="noUser">No user found</string>
+
+    <string name="error" formatted="false">ERROR:\n%1$s</string>
+
+    <string name="img_deleted">profile image was deleted successfully.</string>
+    <string name="wifi_disclaimer">On some newer devices and android versions this maybe only works with airplane mode turned off!</string>
+    <string name="alarm_notification_name">Alarm</string>
+    <string name="alarm_notification_description">Shown when the alarm goes off.</string>
+    <string name="alarm_notification_title">Ring Ring</string>
+    <string name="alarm_notification_text">Wake uuuup</string>
+    <string name="add_country_code" formatted="false">Add a coutry code for %1$s</string>
+
+    <string name="timer_notification_name">Timer</string>
+    <string name="timer_notification_description">Shown when the timer goes off.</string>
+    <string name="timer_notification_title">Ring Ring</string>
+    <string name="timer_notification_text">Timer is finished</string>
+
+    <string name="nutzerinformation">user information</string>
+
+    <string name="impressum">Company Information/\nPrivacy</string>
+    <string name="terms">Terms of use</string>
+    <string name="ploicy">Privacy Policy</string>
+    <string name="impressumText">Nicolai Rahm\n\nEmil-Nolde-Weg 71a\n\n48165 Muenster, Germany\n\nPhone: +4915785735297\n\nE-mail: nicolairahm@gmail.com</string>
+    <string name="termsText">Company Information</string>
+    <string name="policyText">Company Information</string>
+    <string name="intervall_details" formatted="false">Interval: %1$d times every %2$d min.</string>
+    <string name="intervall_details_once" formatted="false">Interval: %1$s</string>
+
+    <string name="loading">\nloading&#8230;</string>
+    <string name="connection">no connection</string>
+
+    <string name="ringtoneC">Ringtone</string>
+    <string name="musicC">Music</string>
+    <string name="spotifyC">Spotify (coming soon)</string>
+
+    <string name="guide">What&amp;How</string>
+    <string name="guidePlus">TuckTack What&amp;How</string>
+
+    <string name="guideUpdate">Update</string>
+    <string name="updateChoose">Choose your favorite and take part in the vote</string>
+    <string name="updateSpeech">&#8226; Improved voice control to turn off the alarm</string>
+    <string name="updateTimerfunctions">&#8226; More timer features</string>
+    <string name="updateSendAlarmsound">&#8226; Share an alarm clock with sound</string>
+
+
+    <string name="unlocked" formatted="false">You have unlocked the full version.\n(%1$d successful invites)</string>
+
+
+    <!-- content description -->
+    <string name="updateChoosen">Update chosen</string>
+    <string name="moneyPic">Comes only with full version</string>
+    <string name="contactPic">image of search by contacts button</string>
+    <string name="searchPic">click to search</string>
+    <string name="editName">user name</string>
+    <string name="shareSym">share image</string>
+    <string name="playImg">play the current alarm sound to test sound and volume</string>
+    <string name="voiceControlInfo">Click for information about voice control</string>
+    <string name="zero" translatable="false">0</string>
+    <string name="fullVersionInfoImg">click for information about the full version</string>
+    <string name="darkBackground">dark background behind profile picture</string>
+    <string name="newNumberHint">type in a new number</string>
+    <string name="deletePIImg">click to delete profile picture</string>
+    <string name="deleteAccountImg">click to delete your account</string>
+    <string name="newUserName">type in a new user name</string>
+    <string name="snoozeImg">snooze button</string>
+    <string name="aufgestandenHint">your woke up text</string>
+    <string name="verschlafenHint">your overslept text</string>
+    <string name="backSong">go back</string>
+    <string name="nextSong">next Song</string>
+    <string name="chooseThisSong">choose this song</string>
+    <string name="nameAlarmAutoHint">alarm clock name</string>
+    <string name="repeatImg">repeat weekly image</string>
+    <string name="volumeImg">volume image</string>
+    <string name="closedDaysImg">This is not your alarm. You can\'t change the days.</string>
+    <string name="closedTimeImg">This is not your alarm. You can\'t change the time.</string>
+    <string name="speakNameImg">Tap to speak the alarm name</string>
+    <string name="reqImg">New requests</string>
+    <string name="deleteMsgImg">click to delete this message</string>
+    <string name="msgImg">message image</string>
+    <string name="openInNewImg">click to open the control center</string>
+    <string name="animatedAlarmImg">animated alarm clock image</string>
+    <string name="handleImg">click this handle to show the list of your alarm clocks</string>
+    <string name="pointpoint" translatable="false">:</string>
+    <string name="trashcanImg">trashcan image</string>
+    <string name="newSharedInfoImg">click to approve and see details about this alarm for you</string>
+    <string name="byBuddyDeletedImg">Your message was deleted by a buddy. Click to dismiss.</string>
+    <string name="clickToAccept">Click to accept this alarm</string>
+    <string name="speakerImg">Image of a speaker that. Means that this alarm shared by you goes off on your device too.</string>
+    <string name="chosenImg">You have chosen this user. Click to unchoose.</string>
+    <string name="reqInfoImg">Click to display the user profile and accept, remove or if you have sent a request cancel this request.</string>
+    <string name="trustedImg">Trusted buddy star. Click to trust or untrust this buddy.</string>
+    <string name="lockedUserImg">This buddy doesn\'t have the full version and can there for not receive messages or alarms.</string>
+    <string name="deleteFromMessageImg">Delete this buddy from your message list for this alarm.</string>
+
+    <string name="chooseAlarmSound">Choose your alarm sound</string>
+
+    <string name="dgImage">Click image to get detailed information about this feature.</string>
+
+
+    <!-- Onboarding -->
+
+    <string name="oLogIn">Already have an account? <u>Log in</u></string>
+    <string name="oSignIn">Create free Account</string>
+    <string name="oHeader1" translatable="false">TuckTack</string>
+    <string name="oHeader2">Alarm Buddy (Minder)</string>
+    <string name="oHeader3">Send Alarm Clocks</string>
+    <string name="oHeader4">Tell it</string>
+
+    <string name="oDesc1">This alarm clock provides a good night sleep, <b>especially before important events</b>, without the fear of oversleeping.</string>
+    <string name="oDesc2">For each alarm clock you can choose someone
+        <b>to wake you up</b> and don\'t get someone to worry where you are <b>if you overslept</b></string>
+    <string name="oDesc3">Send an alarm clock and <b>track the status</b> (e.g. snoozing, woke up,&#8230;)
+            of all receivers in the Control-Center.</string>
+    <string name="oDesc4">Use the Voice Control to <b>shout out the alarm</b> or put it in snooze mode.</string>
+
+    <string name="oStartGuide">Start Guide</string>
+    <string name="oPrivacy"><u>View privacy policy</u></string>
+
+    <!-- Details Guide -->
+    <string name="dgGetStarted">Get started</string>
+    <string name="dgClickImage">(Click image to view details)</string>
+
+    <string name="dgHeader0" formatted="false">Welcome to TuckTack %1$s!</string>
+    <string name="dgHeader1">Main page</string>
+    <string name="dgHeader2">Alarm clock</string>
+    <string name="dgHeader3">Control-Center</string>
+    <string name="dgHeader4">Full version</string>
+
+    <string name="dgWelcomeDesc">What follows is a little guide to get used to the  <b>new alarm clock features </b>.
+        \n\nYou can always get back to this if you click the three dots menu and choose <b>\'What&amp;How\'</b>.
+        \n\nIf you have further questions, problems
+        or any suggestions don\'t hesitate to send me an <a href="mailto:nicolairahm@gmail.com">email.</a>
+    </string>
+
+    <string name="dgMockAlarmName">Test</string>
+
+
+    <string name="testAlarm">It\'s only an test alarm clock</string>
+    <string name="testMessage">It\'s only an example</string>
+    <string name="mockMessageSender">Buddy</string>
+    <string name="mockMessageTime" translatable="false">9:30</string>
+    <string name="mockMessageName">Look after me (Test)</string>
+
+    <!-- show case -->
+    <string name="gotIt">GOT IT</string>
+
+    <!-- Alarms -->
+    <string name="scNextAlarm">Upcoming alarm</string>
+    <string name="scNextAlarmDesc">Detailed information about your next alarm clock.</string>
+
+    <string name="scCC">Contro-Center Feed</string>
+    <string name="scCCDesc">Click it to open the Control-Center and get detailed information about
+    alarms of buddies you have to look after.</string>
+
+    <string name="scList">List of all alarms</string>
+    <string name="scListDesc">Click this handle or swipe up to view the list of all your alarm clocks.
+        \nAlarms sent to you will also be listed here to be approved.</string>
+
+    <string name="scRecycler">Alarm clock</string>
+    <string name="scRecyclerDesc">Click it to edit the alarm clock.
+        \nSwipe left to delete it.</string>
+
+    <!-- Alarm Clock-->
+    <string name="scTabSettings">Settings</string>
+    <string name="scTabSettingsDesc">All your normal alarm clock settings and two special.</string>
+
+    <string name="scSpeechControl">Speech control</string>
+    <string name="scSpeechControlDesc">Turn off the alarm or snooze it with your voice.\n(More infos: click the black info button)</string>
+
+    <string name="scConsideredOverslept">Considert overslept</string>
+    <string name="scConsideredOversleptDesc">If you select a buddy to look out for you this is where you define
+            when he will get the info that you havn\'t been successfully.</string>
+
+    <!-- -->
+    <string name="scTabMessage">Alarm Buddy (Minder)</string>
+    <string name="scTabMessageDesc">Here you can choose buddies to look out for you and your alarm clock.</string>
+
+    <string name="scMinderList">Chosen buddies</string>
+    <string name="scMinderListDesc">Here you can see and remove all chosen buddies by SMS or APP for this alarm.</string>
+
+    <string name="scWithSms">With SMS</string>
+    <string name="scWithSmsDesc">Sends an Sms to all buddies chosen \'with SMS\' for this alarm when overslept.</string>
+
+    <string name="scSmsText">Sms Text</string>
+    <string name="scSmsTextDesc">Click to edit the default text for "woke up" and "overslept".</string>
+
+    <string name="scWithApp">With APP</string>
+    <string name="scWithApDesc">When you save or update: All selected buddies \'with APP\' can get detailed
+        information about this alarm clock and your status(\'snoozing\', \'woke up\' &#8230;) in their Control-Center.</string>
+
+    <!-- -->
+    <string name="scTabSend">Send an Alarm</string>
+    <string name="scTabSendDesc">Here you can send an entire alarm clock to multiple buddies and control if they woke up
+            in your Control-Center.</string>
+
+    <string name="scForMe">You too?</string>
+    <string name="scForMeDesc">If checked the alarm will also be ringing on your phone and be shown in your alarm list.</string>
+
+    <!-- Kontrollzentrum -->
+    <string name="scCCstart">Next alarm to look after</string>
+    <string name="scCCstartDesc">Basic infos about the last clicked element of the list below. By default about
+            the next alarm by a buddy to look after.</string>
+
+    <string name="scCCList">Overview</string>
+    <string name="scCCListDesc">1. An alarm clock send by you to some buddies.
+            \n2. An Alarm from a buddy to look after.
+        \n Click to view basic infos in the box above.</string>
+
+    <string name="scCCFab">Details</string>
+    <string name="scCCFabDesc">Click to view
+                \ndetails of the alarm and the status of the sender for alarms to look after
+                \na list of all receivers and their current status.</string>
+
+    <string name="scCCDetails">Example</string>
+    <string name="scCCDetailsDesc">Details for an alarm to look after.</string>
+
+
+    <string name="guideButton">View Guide</string>
+
+    <string name="noFullVersion">No full version yet</string>
+    <string name="noFullVersionText">%1$s isn\'t unlocked yet!
+        &lt;br />&lt;br />Share TuckTack with at least %2$d friends, who download the app, to get the full version &lt;b>for free&lt;/b>.
+        &lt;br />&lt;br />Also please rate TuckTack on the play store :)</string>
+    <string name="sendWeckerUnlocked">Sending alarms</string>
+    <string name="aufpasserUnlocked">Selecting minders</string>
+
+    <string name="noFriendsYet"><b>Can\'t find friends on TuckTack?</b>
+        \nInvite them and get the full version for free!</string>
+    <string name="noFriendsYetButFullVersion"><b>Can\'t find friends on TuckTack?</b>
+        \nJust invite them!</string>
+
+    <string name="bereitsFreigeschaltet">Your full version is already unlocked.</string>
+
+    <string name="first500">Congratulations you\'r one of the first 500 users</string>
+    <string name="first500Text">All features are unlocked for free.
+        \n\nShare TuckTack with your friends and try the new features with them.</string>
+    <string name="nice">NICE</string>
+
+    <string name="noch5">5 MORE MIN</string>
+    <string name="noch10">10 MORE MIN</string>
+
+    <string name="ganzerSong">Full length</string>
+    <string name="schleife">Loop</string>
+
+    <string name="newAlarm">New Alarm Clock</string>
+    <string name="SMS_NOTAVAILABLE">Currently not available!\nGoogle permissions update</string>
+
+    <string name="freeLeft">%1$d free watched alarms left.</string>
+    <string name="getMore">Get more!</string>
+
+    <string name="time" translatable="false">%1$d:%2$s</string>
+    <string name="timerLongTime" translatable="false">%1$d:%2$s:%3$s</string>
+    <string name="save_timer">Save</string>
+    <string name="name_hint">Name it</string>
+    <string name="point" translatable="false">&#8226;</string>
+
+</resources>

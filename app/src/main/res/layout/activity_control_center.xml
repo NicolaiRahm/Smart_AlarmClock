@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_gradient">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarVerwalten"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/CCcircle_image"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:maxHeight="80dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/CCIn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/CCvon" />
+
+    <androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motionLayoutCC"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        app:layoutDescription="@xml/scene_02"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CCIn">
+
+        <ViewFlipper
+            android:id="@+id/includeDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:measureAllChildren="false">
+
+            <include
+                android:id="@+id/includeMessage"
+                layout="@layout/details_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/includeMessage"
+                layout="@layout/details_shared_byme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ViewFlipper>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/CCNested"
+            android:layout_width="0dp"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewMassenges"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerViewSharedAlarms"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="vertical" />
+
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabSharedDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintBottom_toTopOf="@+id/includeDetails"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/includeDetails"
+            app:srcCompat="@drawable/ic_poll_black_24dp" />
+    </androidx.constraintlayout.motion.widget.MotionLayout>
+
+    <ImageView
+        android:id="@+id/CCshare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        android:contentDescription="@string/shareSym"
+        app:layout_constraintBottom_toBottomOf="@+id/CCcircle_image"
+        app:layout_constraintEnd_toEndOf="@+id/CCcircle_image"
+        app:layout_constraintStart_toStartOf="@+id/CCcircle_image"
+        app:layout_constraintTop_toTopOf="@+id/CCcircle_image"
+        app:layout_constraintVertical_bias="0.562"
+        app:srcCompat="@drawable/ic_share_primary_28dp" />
+
+    <TextView
+        android:id="@+id/CCname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:fontFamily="sans-serif-light"
+        android:includeFontPadding="false"
+        android:shadowColor="@color/next_alarm_shadow_light"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="2"
+        android:textColor="@color/next_alarm_black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/CCvon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/CCvon"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarVerwalten" />
+
+
+    <TextView
+        android:id="@+id/CCvon"
+        style="@style/nextAlarmWhite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/CCIn"
+        app:layout_constraintEnd_toEndOf="@+id/CCIn"
+        app:layout_constraintStart_toStartOf="@+id/CCIn"
+        app:layout_constraintTop_toBottomOf="@+id/CCname" />
+
+    <TextView
+        android:id="@+id/CCIn"
+        style="@style/nextAlarmWhite"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toStartOf="@+id/CCcircle_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CCvon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

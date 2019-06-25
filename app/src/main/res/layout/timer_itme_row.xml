@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+            android:id="@+id/view_background"
+            android:background="@color/colorDam"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+                android:id="@+id/delete_icon"
+                android:contentDescription="@string/trashcanImg"
+                android:layout_width="@dimen/ic_delete"
+                android:layout_height="@dimen/ic_delete"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/padd_10"
+                app:srcCompat="@drawable/ic_delete_white_24dp"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="53dp"
+                android:text="@string/delete"
+                android:textColor="#fff"
+                android:textSize="@dimen/normal_text_size"/>
+
+    </RelativeLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view_foreground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="80dp"
+            android:background="@color/colorText">
+
+
+        <TextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/time_overView"
+                android:layout_marginStart="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:textColor="@color/next_alarm_black"/>
+
+        <TextView
+                android:id="@+id/endsIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/normal_text_size"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toTopOf="@id/whiteBorder"
+                android:layout_marginTop="8dp"
+                app:layout_constraintTop_toBottomOf="@+id/time"/>
+
+
+        <View
+                android:id="@+id/whiteBorder"
+                android:background="@color/colorDam"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/point" app:layout_constraintStart_toEndOf="@+id/endsIn"
+                android:layout_marginStart="8dp"
+                android:textSize="@dimen/text_18sp"
+                android:textColor="@color/colorDam"
+                app:layout_constraintTop_toTopOf="@+id/endsIn" app:layout_constraintBottom_toBottomOf="@+id/endsIn"
+                android:textStyle="bold" android:text="@string/point" android:visibility="invisible"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/name"
+                app:layout_constraintTop_toTopOf="@+id/point" app:layout_constraintBottom_toBottomOf="@+id/point"
+                app:layout_constraintStart_toEndOf="@+id/point" android:layout_marginStart="8dp"
+                android:textSize="@dimen/normal_text_size"/>
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/timerStatusIcon" android:layout_marginTop="8dp"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginBottom="8dp" app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="24dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainActivity">
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.nicolai.alarm_clock.MainActivity"
+        android:label="activity_scrolling"
+        tools:layout="@layout/activity_scrolling" />
+    <fragment
+        android:id="@+id/alarms"
+        android:name="com.nicolai.alarm_clock.Alarms"
+        android:label="fragment_alarms"
+        tools:layout="@layout/fragment_alarms" />
+</navigation>

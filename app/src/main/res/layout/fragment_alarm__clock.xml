@@ -1,0 +1,121 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/acLinearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="25dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintSetAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/flat_landscape">
+
+        <TextView
+            android:id="@+id/Uhrzeit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/next_alarm_Time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.501"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/settingsTimeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-6dp"
+            android:layout_marginEnd="8dp"
+            android:textColor="@color/over_view"
+            android:textSize="@dimen/normal_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Uhrzeit" />
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tabLayoutSetAlarm"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/settingsTimeLeft">
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tiSettings"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_settings_white_24dp" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tiMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_message_white_24dp" />
+
+            <com.google.android.material.tabs.TabItem
+                android:id="@+id/tiSend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ic_share_white_24dp" />
+        </com.google.android.material.tabs.TabLayout>
+
+        <ImageView
+            android:id="@+id/closedTime"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:contentDescription="@string/closedTimeImg"
+            android:src="@drawable/closed_days"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/tabLayoutSetAlarm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scrollSettings"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/vf"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/background_light"
+            android:measureAllChildren="false">
+
+            <include
+                android:id="@+id/includeAlarmSettings"
+                layout="@layout/alarm_settings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                android:id="@+id/includeAlarmMessage"
+                layout="@layout/alarm_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <include
+                android:id="@+id/includeAlarmShare"
+                layout="@layout/alarm_share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </ViewFlipper>
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

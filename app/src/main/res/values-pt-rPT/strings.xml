@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="locale">pt</string>
+    <string name="emailAendern">"novo número de telemóvel "</string>
+    <string name="Email">Número do telemóvel:</string>
+    <string name="message_alarmDetails">pormenores do alarme</string>
+    <string name="Timer">CRONÓMETRO</string>
+    <string name="timer_expired">"O cronómetro terminou "</string>
+    <string name="timer_running">O cronómetro está a funcionar</string>
+    <string name="timer_resume">Continuar a cronometrar</string>
+    <string name="timer_already">Já tem um cronómetro a funcionar</string>
+    <string name="inviteMessage">"Nunca mais tema dormir demasiado sem que ninguém perceba  —>  %1$s "</string>
+    <string name="number_title">Forneça um número de telemóvel</string>
+    <string name="provide_number">O seu número de telemóvel:  +XY…</string>
+    <string name="relogin_number">Por razões de segurança, é necessário entrar novamente na conta antes de alterar o número do telemóvel!</string>
+    <string name="byContacts">pelos contactos</string>
+    <string name="search_explanation">Busque por amigos através dos seus contatos/ número de telemóvel ou clique no ícone de pesquisa na barra de ferramentas para pesquisar pelo nome de usuário  TuckTack.</string>
+    <string name="timer_notification_name">Cronómetro</string>
+    <string name="timer_notification_description">Exibido quando o cronómetro dispara.</string>
+    <string name="timer_notification_text">Fim do cronómetro</string>
+    <string name="updateTimerfunctions">• Mais recursos de cronómetro</string>
+    <string name="contactPic">imagem de pesquisa pelo botão de contactos</string>
+    <string name="nice">FIXE</string>
+</resources>

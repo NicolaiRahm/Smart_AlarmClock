@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="locale">de</string> <!-- englisch -> default -->
+
+    <string name="abstandIntervall">Abstand in Min.</string>
+
+    <string name="geteilt">Geteilt</string>
+
+    <string name="speichern">Speichern</string>
+    <string name="cancel">Abbrechen</string>
+    <string name="finish">Fertig</string>
+    <string name="delete">Löschen</string>
+
+    <string name="Alarmintervall_Auswählen">Wähle ein Alarmintervall aus: </string>
+    <string name="Minuten">Minuten</string>
+    <string name="Anzahl">Anzahl</string>
+    <string name="ok">OK</string>
+    <string name="alarmIntervallManuel" formatted="false">%1$d mal alle %2$d Min.</string>
+
+
+    <string name="choose_alarmtone">Wähle einen Alarmton: </string>
+
+
+    <string name="Name_Wecker">Hat der Wecker einen Namen?</string>
+
+    <string name="AlarmTon">Wähle den passenden Ton oder Song aus</string>
+    <string name="Musik">Musik</string>
+
+    <string name="Mo">Montag</string>
+    <string name="Di">Dienstag</string>
+    <string name="Mi">Mittwoch</string>
+    <string name="Do">Donnerstag</string>
+    <string name="Fr">Freitag</string>
+    <string name="Sa">Samstag</string>
+    <string name="So">Sonntag</string>
+
+    <string name="realy">Soll der Wecker wirklich verworfen werden?</string>
+    <string name="realy2">Sollen die Änderungen wirklich verworfen werden?</string>
+
+    <string name="noMore">Der Wecker wird nicht mehr benutzt! Soll er verworfen werden?</string>
+    <string name="noMoreV">Der Wecker wird nicht mehr benutzt! Da du ihn geteilt hast wäre damit aber auch
+                            die Übersicht im Kontrollzentrum weg. Soll er verworfen werden?</string>
+
+    <string name="Alarme">Alarme</string>
+
+    <string name="Hinzufügen">Hinzufügen</string>
+
+    <string name="ForMe">Auch für mich</string>
+
+    <string name="SMS">Mit SMS</string>
+    <string name="APP">Mit APP</string>
+
+    <string name="verschlafen">VERSCHLAFEN</string>
+
+    <string name="auslogen">Ausloggen</string>
+
+    <string name="Email">Mobilnummer:</string>
+
+    <string name="Account">Account:</string>
+    <string name="deleteAccount">Account löschen</string>
+
+    <string name="Benutzername">Benutzername:</string>
+    <string name="Google2">Dein Benutzername wird von Googel bereitgestellt! Du müsstest ihn direkt in deinem Googel Account ändern.</string>
+    <string name="usernameAendern">Neuer Benutzername</string>
+
+    <string name="Profilbild">Profilbild wechseln</string>
+
+    <string name="ProfilbildUpdate">Profilbild erfolgreich hochgeladen!</string>
+
+    <string name="AllUsers">Alle User</string>
+
+    <string name="Profil">Profil</string>
+    <string name="sRequest">Alarmbuddy?</string>
+    <string name="sRequestCancel">Anfrage abbrechen</string>
+    <string name="sRequestAccept">Bestätigen</string>
+    <string name="dRequest">Ablehnen</string>
+
+    <string name="AnfrageVersendet">Anfrage versendet!</string>
+    <string name="AnfrageCanceld">Anfrage abgebrochen!</string>
+    <string name="AnfrageAbgelehnt">Anfrage abgelehnt!</string>
+
+    <string name="Friends">Ihr seid jetzt Buddies</string>
+
+    <string name="Unfriend" formatted="false">%1s\nlöschen</string>
+    <string name="Unfriended" formatted="false">%1s entfernt</string>
+
+    <string name="FriendsFragment">Buddies</string>
+
+    <string name="ChooseFriendAlarm">Wecker schicken an…</string>
+    <string name="ChooseFriendMessage">Buddies zum Aufpassen wählen...</string>
+    <string name="SearchFriend">Suche nach Buddies</string>
+
+    <string name="message_details">Aufpasserinfos:</string>
+    <string name="message_lastSend" formatted="false">Zuletzt aktiv: %1s</string>
+    <string name="message_turnedOff" formatted="false">Status: %1s</string>
+
+    <string name="message_alarmDetails">Alarmdetails: </string>
+    <string name="message_alarmRepeatYes">Wiederholung: JA</string>
+    <string name="message_alarmRepeatNo">Wiederholung: NEIN</string>
+    <string name="message_alarmDays">Tage: </string>
+    <string name="message_alarmAlarm" formatted="false">Alarmintervall: %1s</string>
+    <string name="alarmOnce">Nur einmal</string>
+
+    <string name="alarmUpdatesButton">Nicht anwenden!</string>
+
+    <string name="sAlarmNeu">Neu</string>
+    <string name="sAlarmUpdated">Updated</string>
+    <string name="sAlarmDeleted">Gelöscht</string>
+
+    <string name="user_deleted">Benutzer gelöscht</string>
+
+    <string name="message_deletedByBuddy" formatted="false">Passt nicht mehr auf: %1s</string>
+
+    <string name="Alarmname">Alarmname</string>
+    <string name="AlarmnameNo">Noch kein Name</string>
+    <string name="AlarmTage">Tage</string>
+    <string name="AlarmIntervall">Intervall</string>
+    <string name="AlarmIntervallNo">Nur einmal</string>
+    <string name="AlarmTone">Alarmton</string>
+    <string name="AlarmVolume">Lautstärke</string>
+    <string name="SpeechControl">Sprachsteuerung</string>
+    <string name="On">An</string>
+    <string name="Off">Aus</string>
+    <string name="alarmDuration">Alarmlänge (In Sekunden)</string>
+
+    <!-- Notifications -->
+
+    <string name="Freundschaftsanfrage">Freundschaftsanfrage</string>
+    <string name="FreundschaftsanfrageBody" formatted="false">%1$s hat dir eine Freundschaftsanfrage geschickt.</string>
+
+    <string name="Wecker">Wecker</string>
+    <string name="WeckerBody" formatted="false">%1$s hat dir einen Wecker geschickt.</string>
+
+    <string name="Weckerupdate">Weckerupdate</string>
+    <string name="WeckerupdateBody" formatted="false">%1$s hat den Wecker geupdated.</string>
+
+    <string name="WeckerDeleted">Wecker gelöscht</string>
+    <string name="WeckerDeletedBody" formatted="false">%1$s hat den Wecker gelöscht.</string>
+    <string name="FromWeckerDeletedBody" formatted="false">%1$s hat dich aus dem Wecker entfernt.</string>
+
+
+    <string name="Weckernachricht">Aufzupassen</string>
+    <string name="WeckernachrichtBody" formatted="false">%1$s möchte, dass du aufpasst.</string>
+
+    <string name="Weckernachrichtupdate">Aufpassenupdate</string>
+    <string name="WeckernachrichtupdateBody" formatted="false">%1$s hat den Wecker zum Aufpassen geupdated</string>
+
+    <string name="WeckernachrichtDeleted">Weckernachricht gelöscht</string>
+    <string name="WeckernachrichtDeletedBody" formatted="false">%1$s hat die Nachricht gelöscht.</string>
+
+    <string name="NachrichtDeleted">Du wurdest entfernt</string>
+    <string name="FromNachrichtDeletedBody" formatted="false">Du brauchst nicht mehr auf %1$s aufpassen.</string>
+
+    <string name="MyMessageDeleted">Passt nicht mehr auf</string>
+    <string name="MyMessageDeletedBody" formatted="false">%1$s passt nicht mehr auf deinen Wecker auf.</string>
+
+    <!--  ############################################################################################# -->
+
+
+    <string name="KeineMusik">Keine Musik gefunden!</string>
+
+    <string name="SharedWeckerDeleted">Der Wecker wird bei allen Buddies als gelöscht angezeigt!</string>
+    <string name="SharedWeckerANDDeleted">Der Wecker wird bei allen Buddies als gelöscht angezeigt und bei Aufpassenden gelöscht!</string>
+    <string name="SharedMessagesDeleted">Der Wecker wird bei allen Aufpassenden gelöscht!</string>
+    <string name="Ja">Ja</string>
+    <string name="Nein">Nein</string>
+
+    <string name="einstellung">Standardeinstellung</string>
+    <string name="wifi">Wifi beim Klingeln</string>
+    <string name="wifiAutoNo">Wifi wird beim Klingeln nicht automatisch eingeschaltet, wenn auf den Wecker aufgepasst wird und / oder einen Alarmsender benachrichtigt!</string>
+    <string name="wifiAutoYes">Wifi wird beim Klingeln automatisch eingeschaltet, wenn auf den Wecker aufgepasst wird und / oder einen Alarmsender benachrichtigt!</string>
+    <string name="standardAlarmSound">Alarmton</string>
+    <string name="standardVolume">Lautstärke</string>
+    <string name="standardDuration">Alarmlänge</string>
+    <string name="standardIntervall">Intervall</string>
+    <string name="standardVoicecontrole">Sprachsteuerung</string>
+
+
+    <string name="autoDownload">Automatischer Weckerdownload!</string>
+    <string name="autoDownloadExplanation">Die Wecker von "Trusted Buddies" werden automatisch gedownloaded / geupdated und aktiviert!</string>
+
+    <string name="Timer">TIMER</string>
+    <string name="timer_expired">Timer ist abgelaufen</string>
+    <string name="timer_again">Nochmal starten?</string>
+    <string name="timer_start_in_Notification">starten</string>
+
+    <string name="timer_running">Timer läuft</string>
+    <string name="timer_end">Endet: %1$s</string>
+    <string name="timer_ended" formatted="false">Endete:\u0020 %1$s</string>
+    <string name="timer_pause_in_Notification">anhalten</string>
+    <string name="timer_stop_in_Notification">zurücksetzen</string>
+
+    <string name="timer_resume">Timer fortsetzen</string>
+    <string name="timer_resume_in_Notification">fortsetzen</string>
+
+    <string name="timer_already">Es läuft schon ein Timer</string>
+
+    <string name="houre">Stunden</string>
+    <string name="minutes">Minuten</string>
+    <string name="seconds">Sekunden</string>
+
+    <string name="control_center">Kontrollzentrum</string>
+
+    <string name="onlyMe">Nur für mich</string>
+    <string name="weckerVon">Wecker von:\u0020</string>
+    <string name="vonMir">Von mir geteilt</string>
+    <string name="vonMirUnd">Geteilt + Aufpassende</string>
+    <string name="mitNachricht">Mit Aufpasser</string>
+    <string name="klingeltIn" formatted="false">Klingelt in: %1$d h und %2$d Min.</string>
+    <string name="klingeltInShort" formatted="false">%1$d h und %2$d Min.</string>
+    <string name="klingeltInToast" formatted="false">Klingelt in: %1$s</string>
+    <string name="nextAlarm" formatted="false">Nächster Wecker: %s</string>
+    <string name="nextIntervall" formatted="false">%1$d mal alle %2$d Min.</string>
+
+    <string name="sharedFeed" formatted="false">Neu : %1$d , Updated: %2$d</string>
+
+    <string name="keineSharedMessage">Keine Wecker zum Aufpassen</string>
+    <string name="noSharedMessageConnection">Keine Verbindung zur Datenbank!</string>
+
+    <string name="deleteAll" formatted="false">Alle löschen (%d)</string>
+    <string name="NoWecker">Alle löschen(0)</string>
+
+
+    <!-- #####################################  SharedPreference Keys ################################ -->
+
+    <!-- ############################################################################################# -->
+
+    <string name="enable_google_voice_typing">Du kannst den Alarm nur mit Sprache aus machen, wenn Google voice typing erlaubt ist!</string>
+    <string name="speech_not_available">Spracherkennung wird leider noch nicht unterstützt. Im Google PlayStore downloaden?</string>
+
+    <string name="dialogDeleteAll">Wenn du Alarme geteilt hast werden die beim Empfänger ausgesetzt und als gelöscht angezeigt. Selbes geschieht wenn ein
+                                    Alarm eine Nachricht geteilt hat.</string>
+
+    <string name="deletedAfterWakeUp">(Gelöscht)</string>
+    <string name="fertig">Fertig</string>
+
+    <string name="dasBistDu">Ne Ne</string>
+
+    <string name="ue30">Es gehen nur max. 30</string>
+    <string name="nichtVonDir">Der Wecker ist nicht von dir!</string>
+
+    <string name="wirklichLoeschen">Möchtest du deinen Account wirklich löschen?? \n Alle geteilt Wecker und Nachrichten werden gelöscht und niemand kann dir / niemandem kannst
+    du noch Wecker oder Nachrichten schicken!</string>
+
+    <string name="greating" formatted="false">Hallo %1$s</string>
+    <string name="loginFailed">Einloggen fehlgeschlagen</string>
+    <string name="tryAgain" formatted="false">%1$s \n\nNochmal versuchen? </string>
+
+
+    <!-- Message und Alarm Stati -->
+    <string name="statusM_not_used_yet">Noch nicht benutzt</string>
+
+    <string name="statusA_not_downloaded_yet">Noch nicht gedownloaded</string>
+    <string name="statusA_downloaded">Heruntergeladen</string>
+    <string name="statusA_not_updated_yet">Noch nicht geupdated</string>
+    <string name="statusA_update_downloaded">Update heruntergeladen</string>
+    <string name="statusA_deleted">Gelöscht</string>
+    <string name="statusA_bestaetigt">Bestätigt</string>
+
+    <string name="status_online">Klingelt</string>
+    <string name="status_verschlafen">Verschlafen</string>
+    <string name="status_aufgestanden">Aufgestanden</string>
+    <string name="status_schlummert">Schlummert</string>
+
+
+    <string name="sms_verschlafen" formatted="false">Ich habe den Wecker zu %1$d:%2$s Uhr verschlafen!\nBitte weck mich auf!! :)</string>
+    <string name="sms_aufgestanden" formatted="false">Ich habe den Wecker zu %1$d:%2$s Uhr ausgemacht!</string>
+
+    <!-- ############################### -->
+
+    <string name="keinKontakt">Noch kein Kontakt ausgewählt</string>
+
+    <string name="messageForYou" formatted="false">Wecker zum Aufpassen</string>
+    <string name="weckerVonDir" formatted="false">Verschickte Wecker</string>
+    <string name="nextMessageFeed1" formatted="false">Nächster Aufpasser</string>
+
+
+    <string name="toTurnOff">Zum Ausmachen ruf:</string>
+    <string name="speechOff1">aus</string>
+    <string name="speechOff2">aus machen</string>
+    <string name="speechOff3">nerv nicht</string>
+
+    <string name="toSnooze">Zum Schlummern ruf:</string>
+    <string name="speechSnooze1">schlummern</string>
+    <string name="speechSnooze2">Pause</string>
+    <string name="speechSnooze3">gleich</string>
+
+    <string name="speechDisclaimer">Bei einem Song mit Text oder wenn der Alarm auf volle Lautstärke gestellt ist, kann deine Anweisung noch nicht immer zuverlässig verstanden werden.    Das wird in kommenden Updates aber noch deutlich verbessert werden!</string>
+
+    <string name="technischPossible">Technisch möglich! \nRechtlich schwierig.</string>
+
+
+    <string name="next_message_name" formatted="false">Nächster Aufpasser: %1$s</string>
+    <string name="message_von_um" formatted="false">Von %1$s am %2$s / %3$s</string>
+    <string name="shared_am" formatted="false">Am %1$s / %2$s</string>
+    <string name="shared_in" formatted="false">In %1$dh und %2$d Min.</string>
+
+    <string name="title_activity_control_center">Control-Center</string>
+
+    <string name="noAufpassen">Keine Wecker zum Aufpassen</string>
+
+    <string name="editSharedAlarm">Wecker details / bearbeiten</string>
+
+    <string name="no_day_choosen">Kein Tag mehr ausgewählt!</string>
+
+    <string name="timeBisVerschlafen">Gilt als "verschlafen"</string>
+    <string name="timeBisVerschlafenNach" formatted="false">%1$s Minuten nach dem letzten Klingeln</string>
+    <string name="invite">Teilen</string>
+    <string name="inviteMessage">Nie wieder Angst haben, dass man verschläft und niemand es mitbekommt &#8212;> \n %1$s</string>
+    <string name="inviteExplanation" formatted="false">Teile TuckTack mit mindestens %1$d Freunden / Freundinnen, um die Vollversion GRATIS zu bekommen!!</string>
+    <string name="inviteChooser">Wie möchtest du den Link schicken?</string>
+    <string name="fullVersion">Vollversion</string>
+    <string name="spokenAlarmName">Sprech den Weckernamen&#8230;</string>
+    <string name="fullVersionText">&#8226; Aufpassende können <b>in ihrem Kontrollzentrum</b> Details
+        zu deinem Wecker und deinen Status verfolgen.
+        \n\n&#8226; Du kannst <b>Wecker verschicken</b> und den Status von jedem Empfänger live im Kontrollzentrum abrufen
+        \n\n&#8226; Du kannst <b>Wecker empfangen</b> und statt via SMS, über TuckTack aufpassen.
+        \n\n&#8226; <b>Dein Kontrollzentrum</b> wird freigeschaltet. Dort kannst du <b>live alle Infos</b> zu Weckern, auf die du aufpassen sollst oder
+        solchen, die du verschickt hast, abrufen.</string>
+    <string name="lockedUser">%1$s kann noch nicht aufpassen oder Wecker empfangen!</string>
+    <string name="emailAendern">Neue Nummer</string>
+    <string name="updated">updated</string>
+    <string name="failed">fehlgeschlagen</string>
+    <string name="verification_code">Bestätigungs Code</string>
+    <string name="number_title">Hinterleg deine Mobilnummer</string>
+    <string name="name_title">Wähle einen Benutzernamen</string>
+    <string name="provide_number">Deine Mobilnummer: +XY&#8230;</string>
+    <string name="provide_name">Dein Benutzername</string>
+    <string name="provide_number_disclaimer">Damit deine Freunde dich einfach mit dem Kotaktbuch finden können, gib deine Mobilnummer an.\n\nSie wird NUR dafür benutzt und
+    nicht an Dritte weiter gegeben.\nWenn du sie nicht angeben willst, drück einfach cancel.</string>
+    <string name="start_with_country_code">Beginne mit deiner Landesvorwahl: +49&#8230;</string>
+    <string name="weiter">weiter</string>
+    <string name="relogin_number">Aus Sicherheitsgründen musst du dich erst neu einloggen, befor du dein Nummer ändern kannst.</string>
+    <string name="relogin_delete_account">Aus Sicherheitsgründen musst du dich erst neu einloggen, befor du deinen Account löschen kannst.</string>
+    <string name="provide_name_disclaimer">Wenn ein/e Freund/in dein nummer nicht gespeichert hat, wird dieser Benutzername angezeigt. Außerdem kann man nach Benutzernamen suchen, wenn es mit der Nummer nicht klappt.</string>
+    <string name="message_cost_disclaimer">Wenn Sie fertig auf der Tastatur drücken, erhalten Sie wahrscheinlich eine SMS. Es können Gebühren für SMS und Datenübertragung anfallen.</string>
+    <string name="byContacts">Mit Kontaktbuch</string>
+    <string name="search_explanation">Suche nach Freunden mit Hilfe deines Kontaktbuches oder klick das Lupensymbol in der Toolbar, um nach einem TuckTack Benutzernamen zu suchen.</string>
+    <string name="donotpushit">Übertreib es nicht :)</string>
+    <string name="noUser">Kein Benutzer gefunden</string>
+    <string name="img_deleted">Das Profilbild wurde erfolgreich gelöscht.</string>
+    <string name="error" formatted="false">ERROR:\n%1$s</string>
+    <string name="wifi_disclaimer">Auf ein paar neuen Geräten und Android Versionen funktioniert das möglicherweise nur, wenn der Flugzeugmodus ausgeschaltet ist.</string>
+    <string name="alarm_notification_name">Wecker</string>
+    <string name="alarm_notification_description">Angezeigt wenn der Weckerklingelt</string>
+    <string name="alarm_notification_title">Klingeling</string>
+    <string name="alarm_notification_text">Auf steeehn!</string>
+    <string name="timer_notification_name">Timer</string>
+    <string name="timer_notification_description">Angezeigt wenn der Timer abgelaufen ist.</string>
+    <string name="timer_notification_title">Klingeling</string>
+    <string name="timer_notification_text">Timer ist abgelaufen</string>
+    <string name="nutzerinformation">Nutzerinformation</string>
+    <string name="impressum">Impressum/\nDatenschutz</string>
+    <string name="terms">Nutzungsbestimmungen</string>
+    <string name="ploicy">Datenschutzerklärung</string>
+    <string name="termsText">Impressum</string>
+    <string name="policyText">Impressum</string>
+    <string name="impressumText">Nicolai Rahm\n\nEmil-Nolde-Weg 71a\n\n48165 Münster, Deutschland\n\nTelefon: +4915785735297\n\nE-mail: nicolairahm@gmail.com</string>
+    <string name="add_country_code" formatted="false">Landesvorwahl von %1$s</string>
+    <string name="intervall_details" formatted="false">Intervall: %1$d mal alle %2$d Min.</string>
+    <string name="intervall_details_once" formatted="false">Intervall: %1$s</string>
+
+    <string name="loading">\nlädt&#8230;</string>
+    <string name="connection">Keine Internetverbindung</string>
+
+    <string name="ringtoneC">Klingelton</string>
+    <string name="musicC">Musik</string>
+    <string name="spotifyC">Spotify (kommt bald)</string>
+
+    <string name="guide">Was&amp;Wie</string>
+    <string name="guidePlus">TuckTack Was&amp;Wie</string>
+
+
+    <!-- Update -->
+    <string name="guideUpdate">Update</string>
+    <string name="updateChoose">Wähle deinen Favoriten und nimm an der Abstimmung teil.</string>
+    <string name="updateSpeech">Verbesserte Sprachsteuerung, um den Wecker aus zu machen.</string>
+
+    <string name="updateTimerfunctions">Mehr Timerfunktionen.</string>
+
+    <string name="updateSendAlarmsound">Einen Wecker mit Alarmton teilen.</string>
+
+    <string name="unlocked" formatted="false">Du hast die Vollversion freigeschaltet.\n(%1$d erfolgreiche Einladungen)</string>
+    <string name="updateChoosen">Ausgewähltes Update</string>
+    <string name="moneyPic">Nur mit Vollversion</string>
+    <string name="contactPic">Bild auf Suche mit Kontaktbuch button</string>
+    <string name="searchPic">Klicke um zu suchen</string>
+    <string name="editName">Benutzername</string>
+    <string name="shareSym">Geteilt Symbol</string>
+    <string name="playImg">Spiel den ausgewählten Weckton, um den Ton und die Lautstärke zu testen.</string>
+    <string name="voiceControlInfo">Klicke für mehr Information über die Sprachsteuerung.</string>
+    <string name="fullVersionInfoImg">Klicke für mehr Information über die Vollversion</string>
+    <string name="darkBackground">Duckler Hintergrund.</string>
+    <string name="newNumberHint">Gib deine Nummer ein.</string>
+    <string name="deletePIImg">Klicke um dein Profilbild zu löschen.</string>
+    <string name="deleteAccountImg">Klicke um deinen Account zu löschen.</string>
+    <string name="newUserName">Gib deinen Benutzernamen ein.</string>
+    <string name="snoozeImg">Schlummerbutton</string>
+    <string name="aufgestandenHint">Dein aufgestanden Text</string>
+    <string name="verschlafenHint">Dein verschlafen Text</string>
+    <string name="backSong">zurück</string>
+    <string name="nextSong">nächstes Lied</string>
+    <string name="chooseThisSong">wähle diesen Song als Weckton</string>
+    <string name="nameAlarmAutoHint">Weckername</string>
+    <string name="repeatImg">wöchentliche Wiederholung Bild</string>
+    <string name="volumeImg">Lautstärke Bild</string>
+    <string name="closedDaysImg">Das ist nicht dein Alarm. Du kannst die Tage nicht ändern.</string>
+    <string name="closedTimeImg">Das ist nicht dein Alarm. Du kannst die Zeit nicht ändern.</string>
+    <string name="speakNameImg">Klick und sprich den Alarmnamen.</string>
+    <string name="reqImg">Neue Anfrage.</string>
+    <string name="deleteMsgImg">Klicke um die Nachricht zu löschen.</string>
+    <string name="msgImg">Nachrichtenbild</string>
+    <string name="openInNewImg">Klicke um das Kontrollzentrum zu öffnen</string>
+    <string name="animatedAlarmImg">Animierter Wecker bild.</string>
+    <string name="handleImg">Klicke diesen Griff, um die Liste aller Wecker anzuzeigen</string>
+    <string name="trashcanImg">Mülleimerbild</string>
+    <string name="newSharedInfoImg">Klicke um Details des Weckers zu sehen und ihn bestätigen zu können.</string>
+    <string name="byBuddyDeletedImg">Deine Nachricht wurde von einem Buddy deleted. Klick um zu verwerfen.</string>
+    <string name="clickToAccept">Klick um den Wecker zu akzeptieren.</string>
+    <string name="speakerImg">Bild eines Lautsprächers. Soll heißen, dass dieser von dir geteilte Wecker auch bei dir klingelt.</string>
+    <string name="chosenImg">Du hast diesen Buddy ausgewählt. Klicke um das rückgängig zu machen.</string>
+    <string name="reqInfoImg">Klicke um das Profil anzuzeigen und die Anfrage zu akzeptiren, abzulehnen oder wenn sie von dir ist zurück zu nehmen.</string>
+    <string name="trustedImg">Tusted Buddy Stern. Klicke um dem Buddy zu vertrauen oder nicht mehr zu vertrauen.</string>
+    <string name="lockedUserImg">Dieser Buddy hat noch nicht die Vollversion und kann deshalb noch keine Nachrichten oder Wecker empfangen.</string>
+    <string name="deleteFromMessageImg">Lösche den Buddy von der Nachrichtenliste dieses Weckers.</string>
+
+    <string name="chooseAlarmSound">Wähle deine Weckermusik</string>
+    <string name="dgImage">Klick auf das Bild, um mehr Informationen zu dieser Option zu bekommen.</string>
+    <string name="oLogIn">Du hast schon einen Account? <u>Einloggen</u></string>
+    <string name="oSignIn">Gratis Account erstellen</string>
+    <string name="oHeader2">Alarmbuddy (Aufpassen)</string>
+    <string name="oHeader3">Wecker schicken</string>
+    <string name="oHeader4">Sags ihm</string>
+
+    <string name="oDesc2">Für jeden Wecker kannst du jemanden auswählen, <b>um dich zu wecken</b> und keine Sorgen entstehen zu lassen wo du bist, <b>falls du verschläfst</b>.</string>
+    <string name="oDesc3">Verschicke einen Wecker und verfolge den <b>Status aller Empfänger</b> z.B. \"schlummert\", \"verschlafen\"&#8230;</string>
+    <string name="oDesc4">Nutz die Sprachsteuerung, um den Wecker morgens <b>aus zu rufen</b> oder in den Schlummer-Modus zu versetzen.</string>
+
+    <string name="oStartGuide">Einführung starten</string>
+    <string name="oPrivacy"><u>Datenschutzerklärung</u></string>
+    <string name="dgGetStarted">Loslegen</string>
+    <string name="dgClickImage">(Tippe aufs Bild)</string>
+    <string name="dgHeader1">Startseite</string>
+    <string name="dgHeader2">Wecker</string>
+    <string name="dgHeader3">Kontrollzentrum</string>
+    <string name="dgHeader4">Vollversion</string>
+    <string name="scNextAlarm">Anstehender Wecker</string>
+    <string name="scNextAlarmDesc">Genaue Infos zu deinem nächsten Wecker.</string>
+    <string name="gotIt">WEITER</string>
+    <string name="scCC">Kontrollzentrum Feed</string>
+    <string name="scCCDesc">Klick, um das Kontrollzentrum zu öffnen und genaue information zu allen Weckern von Buddies zu bekommen, auf die du aufpassen sollst.</string>
+    <string name="scList">Liste aller Wecker</string>
+    <string name="scListDesc">Klicke auf diesen Griff oder wische hoch, um alle deine Wecker anzuzeigen. Hier erscheinen auch alle Wecker die dir geschickt wurden zum Bestätigen.</string>
+    <string name="dgMockAlarmName">Test</string>
+    <string name="scRecycler">Wecker</string>
+    <string name="scRecyclerDesc">Klick, um den Wecker zu bearbeiten.\nWisch nach links, um ihn zu löschen.</string>
+    <string name="scTabSettings">Einstellungen</string>
+    <string name="scTabSettingsDesc">"Name, Intervall, Musik&#8230; alle Standardeinstellungen und zwei Besondere"</string>
+    <string name="scSpeechControl">Sprachsteuerung</string>
+    <string name="scSpeechControlDesc">Eingeschaltet kannst du dem Wecker morgens persönlich sagen, dass er gefälligst aus gehen soll oder du noch schlummern willst.\n(Mehr Infos: Schwarzer Infobutton)</string>
+    <string name="scConsideredOverslept">Verschlafen</string>
+    <string name="scConsideredOversleptDesc">Wenn du für den Wecker Buddies zum Aufpassen auswählst, ist das der Zeitpunkt, zu dem diese die Nachricht bekommen, dass du verschlafen hast.</string>
+    <string name="scTabMessage">Buddies zum Aufpassen</string>
+    <string name="scTabMessageDesc">Hier kannst du Buddies auswählen, die auf dich und deinen Wecker aufpassen sollen.</string>
+    <string name="scMinderList">Ausgewählte Aufpasser/-innen</string>
+    <string name="scMinderListDesc">Hier kannst du alle ausgewählten Buddies sehen und ggf. wieder entfernen.</string>
+    <string name="scWithSms">"Mit SMS" Button</string>
+    <string name="scWithSmsDesc">An alle "Mit SMS" ausgewählten Buddies wird bei Verschlafen eine SMS geschickt.</string>
+    <string name="scSmsText">SMS Text</string>
+    <string name="scSmsTextDesc">Klick, um den standard SMS Text für "Aufgestanden" und "Verschlafen" zu ändern.</string>
+    <string name="scWithApp">"Mit APP" Button</string>
+    <string name="scWithApDesc">Allen \'Mit APP\' ausgewählten Buddies wird, sobald du den Wecker speicherst/updatest, dein Wecker zum Aufpassen in ihrem Kontrollzentrum und Feed angezeigt.  Dort sehen sie wann, wie oft&#8230; dein Wecker schellt und was dein Status (klingelt, verschlafen&#8230;) ist.</string>
+    <string name="scTabSend">Schicke einen Wecker</string>
+    <string name="scTabSendDesc">Schicke einen ganzen Wecker und kontrolliere den Status aller Buddies in deinem Kontrollzentrum.
+            \n(Empfänger/-innen müssen den Wecker erst in ihrer Weckerliste bestätigen -auch Updates- , außer du bist ein "Trusted Buddy")</string>
+    <string name="scForMe">Auch für dich?</string>
+    <string name="scForMeDesc">Wenn gehakt, schellt der Wecker auch bei dir und taucht zusätzlich zum Kontrollzentrum auch in deiner Weckerliste auf.</string>
+    <string name="dgHeader0" formatted="false">Willkommen bei TuckTack %1$s!</string>
+    <string name="dgWelcomeDesc">Im Folgenden wird dir alles vorgestellt, was <b>ungewöhnlich für einen Wecker</b> ist.
+            \n\nDu kannst diese Anleitung jederzeit wieder durch einen Klick auf das drei Punkte Menü auf der Hauptseite und den Punkt
+            <b>"Was&amp;Wie"</b> erneut aufrufen.
+            \n\nWenn du weitere Fragen, Probleme oder Vorschläge hast, schreib mir gerne eine
+            <a href="mailto:nicolairahm@gmail.com">Mail.</a>\n\n</string>
+    <string name="testAlarm">Es ist nur ein Testwecker</string>
+    <string name="testMessage">Ist nur ein Beispiel</string>
+    <string name="mockMessageSender">Buddy</string>
+    <string name="mockMessageName">Pass auf (Test)</string>
+    <string name="scCCstart">Schnelle Übersicht</string>
+    <string name="scCCstartDesc">Klick ein Element der Liste unten, um die ersten Infos hier anzuzeigen. Beim öffnen wird hier der nächste Aufpasser angezeigt.</string>
+    <string name="scCCList">Liste</string>
+    <string name="scCCListDesc">1. Von dir verschickter Wecker.\n2. Wecker zum Aufpassen.\nKlick drauf, um in der Box oben erste Details anzuzeigen.</string>
+    <string name="scCCFab">Details</string>
+    <string name="scCCFabDesc">Klick für genaue Details des ausgewählten Elements.\nVerschickte Wecker: Liste aller Empfänger und deren Status.\nWecker zum Aufpassen: Weckerdetails und Status des Buddies.</string>
+    <string name="scCCDetails">Beispiel</string>
+    <string name="scCCDetailsDesc">Details für einen Wecker zum Aufpassen.</string>
+    <string name="guideButton">Guide öffnen</string>
+    <string name="oDesc1">Dieser Wecker sorgt für einen ordentlichen Schlaf ohne Sorge<b>, besonders vor wichtigen Terminen,</b> zu verschlafen.</string>
+
+    <string name="noFullVersion">Noch keine Vollversion</string>
+    <string name="noFullVersionText">%1$s ist noch nicht freigeschaltet!
+        &lt;br />&lt;br />Teile TuckTack mit mindestens %2$d Freunden / Freundinnen, die die App neu downloaden,
+        um die Vollversion &lt;b>gratis&lt;/b> zu bekommen.&lt;br />&lt;br />Bewerte bitte auch TuckTack im Play Store :)</string>
+    <string name="sendWeckerUnlocked">Wecker schicken</string>
+    <string name="aufpasserUnlocked">Aufpasser/-innen auswählen über TuckTack</string>
+
+    <string name="noFriendsYet"><b>Dein Buddy ist noch nicht bei TuckTack?</b>
+        \nLade ihn / sie ein und du kriegst die Vollversion gratis!</string>
+    <string name="noFriendsYetButFullVersion"><b>Dein Buddy ist noch nicht bei TuckTack?</b>
+        \nLade ihn / sie einfach ein!</string>
+    <string name="bereitsFreigeschaltet">Deine Vollversion ist bereits freigeschaltet.</string>
+
+    <string name="first500">Glückwunsch, du bist unter den ersten 500 Usern</string>
+    <string name="first500Text">Alle Funktionen von TuckTack wurden gratis freigeschaltet.
+        \n\nTeile TuckTack mit deinen Freunden / Freundinnen und probier die Funktionen mit ihnen aus.</string>
+    <string name="nice">NICE</string>
+
+    <string name="noch5">NOCH 5 MIN</string>
+    <string name="noch10">NOCH 10 MIN</string>
+
+    <string name="ganzerSong">Volle Länge</string>
+    <string name="schleife">Schleife</string>
+    <string name="SMS_NOTAVAILABLE">Gerade nicht verfügbar!\nUpdate der Google Berechtigungsrichtlinien</string>
+    <string name="newAlarm">Neuer Wecker</string>
+    <string name="getMore">Hol dir mehr!</string>
+    <string name="freeLeft">%1$d gratis aufgepasste Wecker übrig.</string>
+    <string name="save_timer">Speichern</string>
+    <string name="name_hint">Name</string>
+</resources>

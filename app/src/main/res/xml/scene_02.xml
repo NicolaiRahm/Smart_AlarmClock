@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:motion="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Transition
+        motion:constraintSetStart="@+id/start2"
+        motion:constraintSetEnd="@+id/end2"
+        motion:duration="300">
+        <!--OnSwipe
+            motion:touchAnchorId="@+id/includeAlarmSettings"
+            motion:touchAnchorSide="bottom"
+            motion:dragDirection="dragUp"
+            motion:moveWhenScrollAtTop="false"/-->
+        <OnClick
+            motion:target="@+id/fabSharedDetails"
+            motion:clickAction="toggle"
+            />
+    </Transition>
+
+    <ConstraintSet android:id="@+id/start2">
+        <Constraint
+            android:id="@+id/includeDetails"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:alpha="0.8"
+            android:scaleX="0.8"
+            motion:layout_constraintBottom_toTopOf="@+id/CCNested"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/CCNested">
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/CCNested"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="80dp"
+            android:alpha="1.0"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/motionLayoutCC">
+        </Constraint>
+
+    </ConstraintSet>
+
+    <ConstraintSet android:id="@+id/end2">
+        <Constraint
+            android:id="@+id/includeDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="40dp"
+            android:alpha="1.0"
+            android:scaleX="1.0"
+            motion:layout_constraintBottom_toBottomOf="@+id/CCNested"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintHorizontal_bias="0.0"
+            motion:layout_constraintVertical_bias="0.0"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toTopOf="@+id/motionLayoutCC">
+        </Constraint>
+
+        <Constraint
+            android:id="@+id/CCNested"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="0dp"
+            android:alpha="0.0"
+            motion:layout_constraintBottom_toBottomOf="parent"
+            motion:layout_constraintEnd_toEndOf="parent"
+            motion:layout_constraintStart_toStartOf="parent"
+            motion:layout_constraintTop_toBottomOf="parent">
+        </Constraint>
+    </ConstraintSet>
+
+</MotionScene>
