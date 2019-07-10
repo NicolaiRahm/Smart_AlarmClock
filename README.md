@@ -12,7 +12,7 @@ his or her control-center.<br/>
 I've also implemented some __speech recognition__ so if you check this option when setting the alarm you can turn off the alarm clock just by 
 saying 'turn off' or 'shut up'.<br/>
 The app also has a timer function, you can choose alarm sound/volume/duration, upload a profile picture,
-find friends by mobile number and get rewared for inviting 3 friends.<br/>
+find friends by mobile number and get rewarded for inviting 3 friends.<br/>
 Just try it -> [Google Play](https://play.google.com/store/apps/details?id=com.nicolai.alarm_clock) :thumbsup:
 
 ### Time line (From 0 experience to ~20.000 lines of code in one year)
